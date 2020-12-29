@@ -1,0 +1,468 @@
+*html,body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid black;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');* html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.bg-color{
+    background-color: purple !important;
+    box-shadow: 4px 3px 8px black;
+}
+
+/* ===========nav section====================== */
+
+.navbar .nav-item .nav-link{
+    color: black !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+}
+.navbar .nav-item .nav-link:active{
+    color: deeppink !important;
+
+}
+.navbar .nav-item .nav-link:hover{
+    color: deeppink !important;
+}
+
+button.navbar-toggler{
+    background-color: white  !important;
+    border-radius: 0% !important;
+}
+
+
+
+a.navbar-brand .fa{
+    color: black;
+    font-size: 30px;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+
+}
+a.navbar-brand .fa:hover{
+    color: tomato;
+}
+
+
+nav .nav-item .nav-link.active{
+    color: deeppink !important;
+}
+nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: deeppink;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+nav .nav-item .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }  
+
+/* ===================end nav================ */
+
+/* =======slider section=================== */
+
+.slider img{
+    height: auto;
+    width: 100%;
+}
+@media only screen and(min-width:992px){
+    .slider .img-fluid img{
+        height: 700px !important;
+    }
+}
+@media screen and(max-width:992px){
+    .slider img{
+        height: auto !important;
+        width: 100%;
+    }
+}
+.text-holder h2{
+    margin-top: -350px;
+    z-index: 1;
+    color: white;
+    position: absolute;
+}
+
+/* =========end slider============= */
+/* ======lifestory section============== */
+.life-story h3:nth-child(1){
+    color: red;
+}
+.life-story h3{
+    color: navy;
+}
+.img-holder h4{
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 200;
+}
+.main-section h1{
+    color: red;
+    text-decoration: underline;
+}
+.links-heading{
+    color: black;
+    
+}
+.btn-link{
+    text-decoration: none;
+    padding: 10px 5px 10px 5px;
+    border: 1px solid black;
+    background-color: tomato;
+    color: white;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+}
+.btn-link:hover{
+    color: white;
+    background: deepskyblue;
+    text-decoration: none;
+}
+.btn-info{
+    border-radius: 0% !important;
+}
+.video-section{
+    border: 1px solid black;
+    padding: 2px;
+}
+.footer{
+    padding-top: 100px;
+    padding-bottom: 0px;
+    background-color: purple;
+    margin-top: 20px;
+    width: 100%;
+}
+.footer-nav a{
+    color: white;
+    text-decoration: none;
+    
+    transition: all .4s ease-in;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+
+}
+.footer-nav a:hover{
+    color: red;
+}
+.copy-link{
+    color: white;
+    bottom: 0%;
+}
+
+/* ======end lifestory section=================== */
+
+
+
+
+/* ===================================== */
+
+/* end index page */
+/* ============================================= */
+
+
+
+/* ===================================== */
+
+/* biography page */
+/* ============================================= */
+
+
+/* ===============biography -section============ */
+.bg-body{
+    background: url('..//images/bg-body.jpg');
+}
+.biography{
+    background: url('..//images/memorial-1.png');
+    height: 60vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;   
+}
+.header-text {
+    padding: 200px 0 20px 0;
+    color: white;
+}
+/* ===============end biography -section============ */
+
+/* =============main -part======== */
+.main-part .early-life h2{
+    color: red;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+/* =============end main part========== */
+/* =========education=================== */
+.education h2{
+    color: red;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.education-text img{
+    float: right;
+}
+/* =========end education=================== */
+
+/* =========priesthood=================== */
+.priesthood h2{
+    color: red;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* =========end priesthood=================== */
+/* ========pastoral============= */
+
+.pastoral h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: red;
+    text-align: center;
+}
+
+/* =====end pastoral=================== */
+/* =========retiremnt========= */
+.retirement h2{
+    color: red;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.retirement img{
+    float: left;
+}
+
+/* =========end retirement=========== */
+/* ===========================gallery page================================= */
+
+/* {gallery page} */
+/* ===========================gallery page================================= */
+
+/* ==gallery========== */
+.gallery h2{
+    color: red;
+    text-transform: uppercase;
+}
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+.img-wrapper{
+    overflow: hidden;
+}
+.img-wrapper img{
+    width: 100%;
+    transition: .4s ease;
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/* ============end gallery====================== */
+
+/* ===========================eulogy page================================= */
+
+/* {eulogy page} */
+/* ===========================eulogypage================================= */
+/* ===========eulogy  ===============*/
+
+.eulogy{
+    background: url('..//images/IMG-20201016-WA0025.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+
+}
+.eulogy h2{
+    color: white;
+    padding-top: 100px;
+}
+
+
+
+/* ===========end============= */
+/* ==========foundation paage======================== */
+.foundation{
+    background: url('..//images/memorial-1.png');
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;    
+    height: 500px;
+    
+}
+
+
+.foundation img{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =======about-section======= */
+/* =======officials  */
+.officials {
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: purple;
+    color: white;
+}
+
+.officials h3{
+    font-family: 'Roboto Slab', serif;
+
+}
+.officials .carousel-inner .carousel-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid purple;
+    padding: 5px;
+    margin: auto;
+
+}
+
+.underline{
+    width: 300px;
+    margin: auto;
+    background-color: tomato;
+    height: 1px;
+}
+.back-info{
+    background-color: purple;
+    color: white;
+    font-family: "Roboto", sans-serif;   
+}
+.back-info h2{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+}
+.back-info p{
+    letter-spacing: 1px;
+}
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
