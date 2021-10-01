@@ -1,334 +1,308 @@
-*html,body{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
 #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 80px;
-    height: 80px;
-    margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid black;
-    width: 80px;
-    height: 80px;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
-  }
-  
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
-    display: none;
-    text-align: center;
-  }
-
-  #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');* html,body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto Slab', serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
-.bg-color{
-    background-color: purple !important;
-    box-shadow: 4px 3px 8px black;
+#loader img {
+  width: 50px;
+  height: 50px;
+}
+
+
+#go-top {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    bottom: 200px;
+    right: 50px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');
+
+* html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+.bg-color {
+  background-color: purple !important;
+  box-shadow: 4px 3px 8px black;
 }
 
 /* ===========nav section====================== */
 
-.navbar .nav-item .nav-link{
-    color: black !important;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: all .4s ease-in;
-    -webkit-transition: all .4s ease-in;
-    -moz-transition: all .4s ease-in;
-    -o-transition: all .4s ease-in;
-    position: relative;
-    padding: 10px;
-    font-size: 20px;
+.navbar .nav-item .nav-link {
+  font-size: 21px;
+  line-height: 25.5px;
+  font-weight: 400;
+  color: black !important;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  position: relative;
+  padding: 10px;
 }
-.navbar .nav-item .nav-link:active{
-    color: deeppink !important;
-
+.navbar .nav-item .nav-link:active {
+  color: deeppink !important;
 }
-.navbar .nav-item .nav-link:hover{
-    color: deeppink !important;
-}
-
-button.navbar-toggler{
-    background-color: white  !important;
-    border-radius: 0% !important;
+.navbar .nav-item .nav-link:hover {
+  color: deeppink !important;
 }
 
-
-
-a.navbar-brand .fa{
-    color: black;
-    font-size: 30px;
-    transition: all .4s ease-in;
-    -webkit-transition: all .4s ease-in;
-    -moz-transition: all .4s ease-in;
-    -o-transition: all .4s ease-in;
-
-}
-a.navbar-brand .fa:hover{
-    color: tomato;
+button.navbar-toggler {
+  background-color: white !important;
+  border-radius: 0% !important;
 }
 
+a.navbar-brand .fa {
+  color: black;
+  font-size: 30px;
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+}
+a.navbar-brand .fa:hover {
+  color: tomato;
+}
 
-nav .nav-item .nav-link.active{
-    color: deeppink !important;
+nav .nav-item .nav-link.active {
+  color: deeppink !important;
 }
 nav .nav-item .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: deeppink;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: deeppink;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
 nav .nav-item .nav-link:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-  }  
+  visibility: visible;
+  transform: scaleX(1);
+}
 
 /* ===================end nav================ */
 
 /* =======slider section=================== */
 
-.slider img{
-    height: auto;
+.slider img {
+  height: auto;
+  width: 100%;
+}
+@media only screen and(min-width:992px) {
+  .slider .img-fluid img {
+    height: 700px !important;
+  }
+}
+@media screen and(max-width:992px) {
+  .slider img {
+    height: auto !important;
     width: 100%;
+  }
 }
-@media only screen and(min-width:992px){
-    .slider .img-fluid img{
-        height: 700px !important;
-    }
-}
-@media screen and(max-width:992px){
-    .slider img{
-        height: auto !important;
-        width: 100%;
-    }
-}
-.text-holder h2{
-    margin-top: -350px;
-    z-index: 1;
-    color: white;
-    position: absolute;
+.text-holder h2 {
+  margin-top: -350px;
+  z-index: 1;
+  color: white;
+  position: absolute;
 }
 
 /* =========end slider============= */
 /* ======lifestory section============== */
-.life-story h3:nth-child(1){
-    color: red;
+.life-story {
+  font-family: 'Roboto', sans-serif;
 }
-.life-story h3{
-    color: navy;
+.life-story h3:nth-child(1) {
+  color: deeppink;
 }
-.img-holder h4{
-    font-style: italic;
-    text-transform: lowercase;
-    font-weight: 200;
+.life-story h3 {
+  color: black;
 }
-.main-section h1{
-    color: red;
-    text-decoration: underline;
+.img-holder img {
+  border-radius: 10px;
 }
-.links-heading{
-    color: black;
-    
+.img-holder h4 {
+  font-style: italic;
+  text-transform: lowercase;
+  font-weight: 300;
 }
-.btn-link{
-    text-decoration: none;
-    padding: 10px 5px 10px 5px;
-    border: 1px solid black;
-    background-color: tomato;
-    color: white;
-    transition: all .4s ease-in;
-    -webkit-transition: all .4s ease-in;
-    -moz-transition: all .4s ease-in;
-    -o-transition: all .4s ease-in;
+.main-section p {
+  text-align: justify;
 }
-.btn-link:hover{
-    color: white;
-    background: deepskyblue;
-    text-decoration: none;
+.main-section img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: top;
 }
-.btn-info{
-    border-radius: 0% !important;
+.main-section h1 {
+  color: deeppink;
 }
-.video-section{
-    border: 1px solid black;
-    padding: 2px;
+.links-heading {
+  color: black;
 }
-.footer{
-    padding-top: 100px;
-    padding-bottom: 0px;
-    background-color: purple;
-    margin-top: 20px;
-    width: 100%;
+.btn-link {
+  text-decoration: none;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid black;
+  background-color: tomato;
+  color: white;
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
 }
-.footer-nav a{
-    color: white;
-    text-decoration: none;
-    
-    transition: all .4s ease-in;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 10px;
-    transition: all .4s ease-in;
-    -moz-transition: all .4s ease-in;
-    -webkit-transition: all .4s ease-in;
-    -o-transition: all .4s ease-in;
-    -ms-transition: all .4s ease-in;
+.btn-link:hover {
+  color: white;
+  background: deepskyblue;
+  text-decoration: none;
+}
+.btn-info {
+  border-radius: 0% !important;
+}
+.video-section {
+  padding: 2px;
+}
+.footer {
+  padding-top: 100px;
+  padding-bottom: 0px;
+  background-color: purple;
+  margin-top: 20px;
+  width: 100%;
+  font-family: sans-serif;
+}
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease-in;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px;
+  font-family: sans-serif;
 
+  transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
 }
-.footer-nav a:hover{
-    color: red;
+.footer-nav a:hover {
+  color: deeppink;
 }
-.copy-link{
-    color: white;
-    bottom: 0%;
+.copy-link {
+  color: white;
+  bottom: 0%;
 }
 
 /* ======end lifestory section=================== */
-
-
-
 
 /* ===================================== */
 
 /* end index page */
 /* ============================================= */
 
-
-
 /* ===================================== */
 
 /* biography page */
 /* ============================================= */
 
-
 /* ===============biography -section============ */
-.bg-body{
-    background: url('..//images/bg-body.jpg');
+.bg-body {
+  background: url('..//images/bg-body.jpg');
 }
-.biography{
-    background: url('..//images/memorial-1.png');
-    height: 60vh;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;   
+.biography {
+  background: url('..//images/memorial-1.png');
+  height: 60vh;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: contain;
 }
-.header-text {
-    padding: 200px 0 20px 0;
-    color: white;
+.biography h2 {
+  font-family: 'Poppins', sans-serif;
+  padding: 200px 0 20px 0;
+  color: white;
 }
+
 /* ===============end biography -section============ */
 
 /* =============main -part======== */
-.main-part .early-life h2{
-    color: red;
-    text-decoration: underline;
-    text-transform: uppercase;
+
+.main-part .early-life h2 {
+  color: deeppink;
+  text-transform: uppercase;
+}
+.main-part p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify !important;
 }
 /* =============end main part========== */
 /* =========education=================== */
-.education h2{
-    color: red;
-    text-transform: uppercase;
-    text-decoration: underline;
+.education {
+  text-align: justify !important ;
 }
-.education-text img{
-    float: right;
+.education h2 {
+  color: deeppink;
+  text-transform: uppercase;
+  text-align: center;
 }
+
 /* =========end education=================== */
 
 /* =========priesthood=================== */
-.priesthood h2{
-    color: red;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-align: center;
+.priesthood h2 {
+  color: deeppink;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* =========end priesthood=================== */
 /* ========pastoral============= */
 
-.pastoral h2{
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: red;
-    text-align: center;
+.pastoral h2 {
+  text-transform: uppercase;
+  color: deeppink;
+  text-align: center;
+}
+.accordion .btn-link {
+  background-color: deeppink;
+}
+.accordion .btn-link:hover {
+  background-color: purple;
+  outline-color: transparent;
 }
 
 /* =====end pastoral=================== */
 /* =========retiremnt========= */
-.retirement h2{
-    color: red;
-    text-transform: uppercase;
-    text-decoration: underline;
+.retirement h2 {
+  color: deeppink;
+  text-transform: uppercase;
 }
-.retirement img{
-    float: left;
+.retirement img {
+  float: left;
+  object-fit: contain;
 }
 
 /* =========end retirement=========== */
@@ -338,24 +312,28 @@ nav .nav-item .nav-link:hover::before {
 /* ===========================gallery page================================= */
 
 /* ==gallery========== */
-.gallery h2{
-    color: red;
-    text-transform: uppercase;
+.gallery > img {
+  object-fit: contain;
 }
-.row.no-gutters [class*=col-] {
-    padding-left: 0;
-    padding-right: 0;
+.gallery h2 {
+  color: deeppink;
+  text-transform: uppercase;
 }
-.img-wrapper{
-    overflow: hidden;
+.row.no-gutters [class*='col-'] {
+  padding-left: 0;
+  padding-right: 0;
 }
-.img-wrapper img{
-    width: 100%;
-    transition: .4s ease;
+.img-wrapper {
+  overflow: hidden;
 }
-.img-wrapper img:hover{
-    transform: scale(1.5);
-    cursor: zoom-in;
+.img-wrapper img {
+  width: 100%;
+  transition: 0.4s ease;
+  object-fit: contain;
+}
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
 }
 
 /* ============end gallery====================== */
@@ -366,103 +344,96 @@ nav .nav-item .nav-link:hover::before {
 /* ===========================eulogypage================================= */
 /* ===========eulogy  ===============*/
 
-.eulogy{
-    background: url('..//images/IMG-20201016-WA0025.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-
-}
-.eulogy h2{
-    color: white;
-    padding-top: 100px;
+.eulogy {
+  background: url('..//images/IMG-20201016-WA0025.jpg');
+  background-attachment: fixed;
+  -moz-background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vh;
 }
 
-
+.eulogy h2 {
+  color: white;
+  padding-top: 100px;
+}
 
 /* ===========end============= */
 /* ==========foundation paage======================== */
-.foundation{
-    background: url('..//images/memorial-1.png');
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-position: center;
-    font-family: 'Roboto', sans-serif;    
-    height: 500px;
-    
+
+.foundation {
+  display: flex;
+  align-items: center;
 }
-
-
-.foundation img{
-    font-family: 'Roboto', sans-serif;
+.foundation img {
+  font-family: 'Roboto', sans-serif;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* =======about-section======= */
 /* =======officials  */
 .officials {
-    margin-top: 30px;
-    font-family: 'Roboto', sans-serif;
-    background-color: purple;
-    color: white;
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  background-color: purple;
+  color: white;
+  height: 500px;
 }
 
-.officials h3{
-    font-family: 'Roboto Slab', serif;
-
+.officials h3 {
+  font-family: 'Roboto Slab', serif;
 }
-.officials .carousel-inner .carousel-item img{
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    border: 2px solid purple;
-    padding: 5px;
-    margin: auto;
-
+.officials .carousel-inner .carousel-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px solid purple;
+  padding: 5px;
+  margin: auto;
 }
 
-.underline{
-    width: 300px;
-    margin: auto;
-    background-color: tomato;
-    height: 1px;
+.underline {
+  width: 300px;
+  margin: auto;
+  background-color: tomato;
+  height: 1px;
 }
-.back-info{
-    background-color: purple;
-    color: white;
-    font-family: "Roboto", sans-serif;   
+.back-info {
+  background-color: purple;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
-.back-info h2{
-    font-family: "Roboto",sans-serif;
-    text-transform: uppercase;
+.back-info h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
-.back-info p{
-    letter-spacing: 1px;
+.back-info p {
+  line-height: 21px;
+  font-size: 16px;
+  text-align: justify !important;
 }
 #button {
-    display: inline-block;
-    background-color: #FF9800;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    margin: 30px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s;
-    z-index: 1000;
-  }
-  #button:hover {
-    cursor: pointer;
-    background-color: #333;
-  }
-  #button:active {
-    background-color: #555;
-  }
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
