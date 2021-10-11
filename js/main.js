@@ -56,30 +56,7 @@ $(document).ready(function(){
       });
 
       new WOW().init();
-      jump('#myBtn', {
-        duration: 1000,
-        offset: 0,
-        callback: undefined,
-        easing: easeInOutQuad,
-        a11y: false
-      });
-      $(function () {
-
-        $('#myBtn').goTop({
       
-          // top offset
-          scrollTop: 100,
-      
-          // scroll speed in milliseconds
-          scrollSpeed: 1000,
-      
-          // fade in/out speed in milliseconds
-          fadeInSpeed: 1000,
-          fadeOutSpeed: 500
-          
-        })
-      
-      })
 });
 
 var myVar;

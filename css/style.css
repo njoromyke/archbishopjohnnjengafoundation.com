@@ -1,42 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap");
 #loader {
   position: absolute;
-  left: 50%;
   top: 50%;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-}
-#loader img {
-  width: 50px;
-  height: 50px;
+  left: 40vw;
 }
 
-
-#go-top {
-    display: none;
-    font-size: 30px;
-    position: fixed;
-    bottom: 200px;
-    right: 50px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    cursor: pointer;
-  }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap");
 
 * html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto ", sans-serif;
 }
 .bg-color {
   background-color: purple !important;
@@ -46,7 +22,7 @@ body {
 /* ===========nav section====================== */
 
 .navbar .nav-item .nav-link {
-  font-size: 21px;
+  font-size: 20px;
   line-height: 25.5px;
   font-weight: 400;
   color: black !important;
@@ -86,7 +62,7 @@ nav .nav-item .nav-link.active {
   color: deeppink !important;
 }
 nav .nav-item .nav-link::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -105,6 +81,17 @@ nav .nav-item .nav-link:hover::before {
 /* ===================end nav================ */
 
 /* =======slider section=================== */
+.welcome {
+  background-image: url("../images/memorial-1.png");
+  height: 500px;
+  background-size: contain;
+  background-attachment: fixed;
+}
+.welcome h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+}
 
 .slider img {
   height: auto;
@@ -131,7 +118,7 @@ nav .nav-item .nav-link:hover::before {
 /* =========end slider============= */
 /* ======lifestory section============== */
 .life-story {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .life-story h3:nth-child(1) {
   color: deeppink;
@@ -214,6 +201,17 @@ nav .nav-item .nav-link:hover::before {
 .copy-link {
   color: white;
   bottom: 0%;
+  font-size: 1em;
+}
+.copy-link h2 {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.copy-link h3 {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 /* ======end lifestory section=================== */
@@ -230,17 +228,17 @@ nav .nav-item .nav-link:hover::before {
 
 /* ===============biography -section============ */
 .bg-body {
-  background: url('..//images/bg-body.jpg');
+  background: url("..//images/bg-body.jpg");
 }
 .biography {
-  background: url('..//images/memorial-1.png');
+  background: url("..//images/memorial-1.png");
   height: 60vh;
   background-attachment: fixed;
   background-size: cover;
   object-fit: contain;
 }
 .biography h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 200px 0 20px 0;
   color: white;
 }
@@ -319,7 +317,7 @@ nav .nav-item .nav-link:hover::before {
   color: deeppink;
   text-transform: uppercase;
 }
-.row.no-gutters [class*='col-'] {
+.row.no-gutters [class*="col-"] {
   padding-left: 0;
   padding-right: 0;
 }
@@ -329,7 +327,8 @@ nav .nav-item .nav-link:hover::before {
 .img-wrapper img {
   width: 100%;
   transition: 0.4s ease;
-  object-fit: contain;
+  object-fit: cover;
+  height: 300px;
 }
 .img-wrapper img:hover {
   transform: scale(1.5);
@@ -345,7 +344,7 @@ nav .nav-item .nav-link:hover::before {
 /* ===========eulogy  ===============*/
 
 .eulogy {
-  background: url('..//images/IMG-20201016-WA0025.jpg');
+  background: url("..//images/IMG-20201016-WA0025.jpg");
   background-attachment: fixed;
   -moz-background-size: cover;
   background-position: center;
@@ -368,7 +367,7 @@ nav .nav-item .nav-link:hover::before {
   align-items: center;
 }
 .foundation img {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 500px;
   object-fit: cover;
   object-position: center;
@@ -376,24 +375,34 @@ nav .nav-item .nav-link:hover::before {
 
 /* =======about-section======= */
 /* =======officials  */
+
 .officials {
-  margin-top: 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: purple;
   color: white;
-  height: 500px;
+  max-height: fit-content;
+  margin-top: 20px;
+}
+@media screen and (min-width: 992px) {
+  .officials {
+    font-family: "Roboto", sans-serif;
+    background-color: purple;
+    color: white;
+    max-height: 500px;
+  }
 }
 
 .officials h3 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto ", sans-serif;
+  font-weight: 1em;
 }
 .officials .carousel-inner .carousel-item img {
   width: 150px;
   height: 150px;
   border-radius: 100%;
-  border: 2px solid purple;
   padding: 5px;
   margin: auto;
+  border: 2px solid white;
 }
 
 .underline {
@@ -405,35 +414,15 @@ nav .nav-item .nav-link:hover::before {
 .back-info {
   background-color: purple;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .back-info h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
 .back-info p {
-  line-height: 21px;
+  line-height: 25.5px;
   font-size: 16px;
   text-align: justify !important;
-}
-#button {
-  display: inline-block;
-  background-color: #ff9800;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  margin: 30px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color 0.3s;
-  z-index: 1000;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
+  font-weight: 400;
 }
