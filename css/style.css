@@ -93,20 +93,9 @@ nav .nav-item .nav-link:hover::before {
   font-weight: 600;
 }
 
-.slider img {
-  height: auto;
-  width: 100%;
-}
 @media only screen and(min-width:992px) {
-  .slider .img-fluid img {
-    height: 700px !important;
-  }
 }
 @media screen and(max-width:992px) {
-  .slider img {
-    height: auto !important;
-    width: 100%;
-  }
 }
 .text-holder h2 {
   margin-top: -350px;
@@ -362,15 +351,13 @@ nav .nav-item .nav-link:hover::before {
 /* ===========end============= */
 /* ==========foundation paage======================== */
 
-.foundation {
-  display: flex;
-  align-items: center;
-}
-.foundation img {
-  font-family: "Roboto", sans-serif;
-  height: 500px;
+.slider img {
+  width: 100vw;
+  height: 400px;
   object-fit: cover;
-  object-position: center;
+  background-position: center;
+  background-size: contain;
+  border-radius: 10px;
 }
 
 /* =======about-section======= */
