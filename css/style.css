@@ -353,7 +353,7 @@ nav .nav-item .nav-link:hover::before {
 
 .slider img {
   width: 100vw;
-  height: 400px;
+  max-height: 400px;
   object-fit: cover;
   background-position: center;
   background-size: contain;
