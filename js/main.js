@@ -2,9 +2,9 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var top = $(window).scrollTop();
     if (top >= 60) {
-      $("nav").addClass("shadow bg-color").fadeIn("slow");
+      $("nav").addClass("shadow bg-color");
     } else if ($("nav").hasClass("bg-color")) {
-      $("nav").removeClass("bg-color");
+      $("nav").removeClass("bg-color shadow")
     }
   });
   $(".gallery-item").magnificPopup({
@@ -13,8 +13,6 @@ $(document).ready(function () {
       enabled: true,
     },
   });
-
-  new WOW().init();
 });
 
 var myVar;

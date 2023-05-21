@@ -21,23 +21,17 @@ body {
 /* ===========nav section====================== */
 
 .navbar .nav-item .nav-link {
-  font-size: 20px;
-  line-height: 25.5px;
-  font-weight: 400;
+  font-size: 1rem;
   color: black !important;
   text-transform: uppercase;
-  transition: all 0.4s ease-in;
-  -webkit-transition: all 0.4s ease-in;
-  -moz-transition: all 0.4s ease-in;
-  -o-transition: all 0.4s ease-in;
   position: relative;
   padding: 10px;
 }
 .navbar .nav-item .nav-link:active {
-  color: deeppink !important;
+  color: purple !important;
 }
 .navbar .nav-item .nav-link:hover {
-  color: deeppink !important;
+  color: purple !important;
 }
 
 button.navbar-toggler {
@@ -46,20 +40,42 @@ button.navbar-toggler {
 }
 
 a.navbar-brand .fa {
-  color: black;
+  color: purple;
   font-size: 30px;
   transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
   -moz-transition: all 0.4s ease-in;
   -o-transition: all 0.4s ease-in;
 }
-a.navbar-brand .fa:hover {
-  color: tomato;
+
+.bg-color a.navbar-brand .fa {
+  color: white;
+}
+.bg-color a.navbar-brand .fa:hover {
+  color: white;
 }
 
 nav .nav-item .nav-link.active {
-  color: deeppink !important;
+  color: purple !important;
 }
+
+.bg-color .nav-item .nav-link.active {
+  color: white !important;
+}
+
+nav .nav-item .nav-link.active::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.bg-color .nav-item .nav-link {
+  color: white !important;
+}
+
+.bg-color .nav-item .nav-link:hover {
+  color: white !important;
+}
+
 nav .nav-item .nav-link::before {
   content: "";
   position: absolute;
@@ -67,11 +83,15 @@ nav .nav-item .nav-link::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: deeppink;
+  background-color: purple;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
+.bg-color .nav-item .nav-link::before {
+  background-color: white;
+}
+
 nav .nav-item .nav-link:hover::before {
   visibility: visible;
   transform: scaleX(1);
@@ -82,11 +102,11 @@ nav .nav-item .nav-link:hover::before {
 /* =======slider section=================== */
 .welcome {
   background-image: url("../images/memorial-1.png");
-  height: 500px;
+  height: 70dvh;
   background-size: contain;
   background-attachment: fixed;
 }
-.welcome h2 {
+.welcome h1 {
   font-family: "Roboto", sans-serif;
   font-size: 2em;
   font-weight: 600;
@@ -109,7 +129,7 @@ nav .nav-item .nav-link:hover::before {
   font-family: "Roboto", sans-serif;
 }
 .life-story h3:nth-child(1) {
-  color: deeppink;
+  color: purple;
 }
 .life-story h3 {
   color: black;
@@ -132,26 +152,21 @@ nav .nav-item .nav-link:hover::before {
   object-position: top;
 }
 .main-section h1 {
-  color: deeppink;
+  color: purple;
 }
 .links-heading {
   color: black;
 }
 .btn-link {
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 10px 5px 10px 5px;
   border: 1px solid black;
-  background-color: tomato;
-  color: white;
+  background-color: purple;
+  color: white !important;
   transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
   -moz-transition: all 0.4s ease-in;
   -o-transition: all 0.4s ease-in;
-}
-.btn-link:hover {
-  color: white;
-  background: deepskyblue;
-  text-decoration: none;
 }
 .btn-info {
   border-radius: 0% !important;
@@ -170,21 +185,15 @@ nav .nav-item .nav-link:hover::before {
 .footer-nav a {
   color: white;
   text-decoration: none;
-  transition: all 0.4s ease-in;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 14px;
   padding: 10px;
-  font-family: sans-serif;
-
-  transition: all 0.4s ease-in;
-  -moz-transition: all 0.4s ease-in;
-  -webkit-transition: all 0.4s ease-in;
-  -o-transition: all 0.4s ease-in;
-  -ms-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in-out;
 }
 .footer-nav a:hover {
-  color: deeppink;
+  color: white;
+  text-decoration: underline;
 }
 .copy-link {
   color: white;
@@ -236,7 +245,7 @@ nav .nav-item .nav-link:hover::before {
 /* =============main -part======== */
 
 .main-part .early-life h2 {
-  color: deeppink;
+  color: purple;
   text-transform: uppercase;
 }
 .main-part p {
@@ -250,7 +259,7 @@ nav .nav-item .nav-link:hover::before {
   text-align: justify !important ;
 }
 .education h2 {
-  color: deeppink;
+  color: purple;
   text-transform: uppercase;
   text-align: center;
 }
@@ -259,7 +268,7 @@ nav .nav-item .nav-link:hover::before {
 
 /* =========priesthood=================== */
 .priesthood h2 {
-  color: deeppink;
+  color: purple;
   text-transform: uppercase;
   text-align: center;
 }
@@ -269,11 +278,11 @@ nav .nav-item .nav-link:hover::before {
 
 .pastoral h2 {
   text-transform: uppercase;
-  color: deeppink;
+  color: purple;
   text-align: center;
 }
 .accordion .btn-link {
-  background-color: deeppink;
+  background-color: purple;
 }
 .accordion .btn-link:hover {
   background-color: purple;
@@ -283,7 +292,7 @@ nav .nav-item .nav-link:hover::before {
 /* =====end pastoral=================== */
 /* =========retiremnt========= */
 .retirement h2 {
-  color: deeppink;
+  color: purple;
   text-transform: uppercase;
 }
 .retirement img {
@@ -302,7 +311,7 @@ nav .nav-item .nav-link:hover::before {
   object-fit: contain;
 }
 .gallery h2 {
-  color: deeppink;
+  color: purple;
   text-transform: uppercase;
 }
 .row.no-gutters [class*="col-"] {
@@ -339,7 +348,7 @@ nav .nav-item .nav-link:hover::before {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 80vh;
+  height: 60dvh;
 }
 
 .eulogy h2 {
@@ -352,7 +361,7 @@ nav .nav-item .nav-link:hover::before {
 
 .slider img {
   width: 100vw;
-  max-height: 400px;
+  max-height: 80vh;
   object-fit: cover;
   background-position: center;
   background-size: contain;
@@ -364,51 +373,82 @@ nav .nav-item .nav-link:hover::before {
 
 .officials {
   font-family: "Roboto", sans-serif;
-  background-color: purple;
-  color: white;
+  background-color: #ffffff;
+  color: #000000 !important;
   max-height: fit-content;
   margin-top: 20px;
 }
-@media screen and (min-width: 992px) {
-  .officials {
-    font-family: "Roboto", sans-serif;
-    background-color: purple;
-    color: white;
-    max-height: 500px;
-  }
+
+.officials h2 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: purple;
+}
+
+.officials .underline {
+  background-color: purple;
 }
 
 .officials h3 {
-  font-family: "Roboto ", sans-serif;
   font-weight: 1em;
 }
+
 .officials .carousel-inner .carousel-item img {
   width: 150px;
   height: 150px;
   border-radius: 100%;
   padding: 5px;
   margin: auto;
-  border: 2px solid white;
+  border: 2px solid purple;
+}
+
+/* indicators */
+.officials .carousel-indicators {
+  margin-top: 40px !important;
+}
+.officials .carousel-indicators li {
+  background-color: purple;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid purple;
+}
+
+.officials .carousel-control-prev,
+.officials .carousel-control-next {
+  background-color: purple;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid purple;
 }
 
 .underline {
   width: 300px;
   margin: auto;
-  background-color: tomato;
-  height: 1px;
+  background-color: white;
+  height: 2px;
 }
 .back-info {
-  background-color: purple;
-  color: white;
+  background-color: #f2f2f2f2;
+  color: #000000;
   font-family: "Roboto", sans-serif;
 }
 .back-info h2 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  color: purple;
 }
 .back-info p {
   line-height: 25.5px;
   font-size: 16px;
   text-align: justify !important;
   font-weight: 400;
+}
+.back-info .underline {
+  width: 300px;
+  margin: auto;
+  background-color: purple;
+  height: 1px;
 }
